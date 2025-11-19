@@ -1,166 +1,156 @@
-🚀 Discord Clone — MERN Stack (Frontend + Backend)
+# 🚀 Discord Clone — MERN Stack (Frontend + Backend)
 
-A real-time chat application inspired by Discord, built using the MERN stack with live communication, channel management, and persistent messaging.
-This project demonstrates full-stack development skills using MongoDB, Express, React, Node.js, and Pusher for real-time updates.
+A real-time chat application inspired by Discord, built using the **MERN stack** with **live communication**, **channel management**, and **persistent messaging**.  
+This project demonstrates full-stack development skills using **MongoDB, Express, React, Node.js**, and **Pusher** for real-time updates.
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 Discord-clone/
 │
 ├── discord-frontend/     # React frontend (channels, chat UI, Redux)
 ├── discord-backend/      # Express + MongoDB backend (API + Pusher)
 └── README.md             # Project documentation
+```
 
-✨ Features
-🔹 Real-Time Messaging (Pusher)
+---
 
+# ✨ Features
+
+### 🔹 Real-Time Messaging (Pusher)
 Messages appear instantly across all clients with WebSocket-powered updates.
 
-🔹 Channel System
+### 🔹 Channel System
+- Create new chat channels  
+- Fetch channels from MongoDB  
+- Messages are tied to individual channels
 
-Create new chat channels
+### 🔹 Modern React Frontend
+- Functional components  
+- Redux (user + channel state)  
+- Axios API calls  
+- Styled UI similar to Discord
 
-Fetch channels from MongoDB
+### 🔹 RESTful Backend API
+- Create channels  
+- Post messages  
+- Fetch conversation history  
+- MongoDB persistence using Mongoose
 
-Messages are tied to individual channels
+### 🔹 Cloud Database
+Uses **MongoDB Atlas** for scalable cloud storage.
 
-🔹 Modern React Frontend
-
-Functional components
-
-Redux (user + channel state)
-
-Axios API calls
-
-Styled UI similar to Discord
-
-🔹 RESTful Backend API
-
-Create channels
-
-Post messages
-
-Fetch conversation history
-
-MongoDB persistence using Mongoose
-
-🔹 Cloud Database
-
-Uses MongoDB Atlas for scalable cloud storage.
-
-🔹 Fully Decoupled Frontend + Backend
-
+### 🔹 Fully Decoupled Frontend + Backend
 Independent folders with their own dependencies.
 
-🛠️ Technologies Used
-Frontend
+---
 
-React
+# 🛠️ Technologies Used
 
-Redux
+### **Frontend**
+- React  
+- Redux  
+- Axios  
+- Material-UI Icons  
+- CSS Modules  
 
-Axios
+### **Backend**
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- Pusher  
+- CORS  
+- Nodemon (dev)  
 
-Material-UI Icons
+---
 
-CSS Modules
+# 🚀 Getting Started
 
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB + Mongoose
-
-Pusher
-
-CORS
-
-Nodemon (dev)
-
-🚀 Getting Started
-1️⃣ Clone the repository
+## 1️⃣ Clone the repository
+```bash
 git clone https://github.com/<your-username>/Discord-clone.git
 cd Discord-clone
+```
 
-⚙️ Backend Setup (discord-backend)
-Install dependencies
+---
+
+# ⚙️ Backend Setup (`discord-backend`)
+
+### Install dependencies
+```bash
 cd discord-backend
 npm install
+```
 
-Add your environment variables
+### Add your environment variables  
+Create a `.env` file:
 
-Create a .env file:
-
+```
 MONGO_URI=your_mongodb_connection_string
 PUSHER_APP_ID=xxx
 PUSHER_KEY=xxx
 PUSHER_SECRET=xxx
 PUSHER_CLUSTER=us2
+```
 
-Start the server
+### Start the server
+```bash
 npm start
-
+```
 
 Server runs at:
 
+```
 http://localhost:8002
+```
 
-💻 Frontend Setup (discord-frontend)
-Install dependencies
+---
+
+# 💻 Frontend Setup (`discord-frontend`)
+
+### Install dependencies
+```bash
 cd ../discord-frontend
 npm install
+```
 
-Start React client
+### Start React client
+```bash
 npm start
-
+```
 
 React app runs at:
 
+```
 http://localhost:3000
+```
 
-🔗 API Endpoints
-Get Channel List
+---
 
-GET /get/channelList
+# 🔗 API Endpoints
 
-Create Channel
+### Get Channel List
+`GET /get/channelList`
 
-POST /new/channel
+### Create Channel
+`POST /new/channel`
 
-Get Conversation
+### Get Conversation
+`GET /get/conversation?id=<channel_id>`
 
-GET /get/conversation?id=<channel_id>
+### Post Message
+`POST /new/message`
 
-Post Message
+---
 
-POST /new/message
+# 👨‍💻 Author
 
-📸 Screenshots (optional)
-
-Want me to generate a screenshots section with placeholders?
-I can do that too.
-
-📦 Deployment (optional)
-
-I can help you deploy using:
-
-Render
-
-Vercel (frontend)
-
-Railway / Render / Fly.io (backend)
-
-MongoDB Atlas
-
-Just ask.
-
-👨‍💻 Author
-
-Felix Liu
+**Felix Liu**  
 Full-Stack & Embedded Engineer
-GitHub • LinkedIn • Portfolio (optional — I can add them for you)
 
-📝 License
+---
 
+# 📝 License
 MIT License — free to use, modify, and share.
