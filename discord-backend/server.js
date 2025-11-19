@@ -22,7 +22,7 @@ app.use(cors());
 
 
 // db config
-const mongoURI = 'mongodb+srv://lzr710459698_db_user:a43KyiifEo2p7n9p@felixl.keauic0.mongodb.net/?appName=FelixL'
+const mongoURI = ''
 
 mongoose.connect(mongoURI)
     .then(() => console.log("MongoDB connected"))
