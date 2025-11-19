@@ -4,7 +4,7 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBDsJf6KmZnb4-h65ibzaxvry_FPIqm6y0",
+  apiKey: "",
   authDomain: "discord-clone-b5281.firebaseapp.com",
   projectId: "discord-clone-b5281",
   storageBucket: "discord-clone-b5281.firebasestorage.app",
